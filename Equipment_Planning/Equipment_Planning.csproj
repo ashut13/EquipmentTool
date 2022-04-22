@@ -1,0 +1,502 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{47F00851-F6D3-4B1B-AD02-037F60F283AB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Equipment_Planning</RootNamespace>
+    <AssemblyName>Equipment_Planning</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44344</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=20.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.20.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AddNewPosition.aspx" />
+    <Content Include="AngularJs_Page\AddNewPosition.js" />
+    <Content Include="AngularJs_Page\UserMaster.js" />
+    <Content Include="AngularJs_Page\PositionMaster.js" />
+    <Content Include="AngularJs_Page\ThemaMaster.js" />
+    <Content Include="AngularJs_Page\UmsetzendesGewerkMaster.js" />
+    <Content Include="AngularJs_Page\BeschlussstandMaster.js" />
+    <Content Include="AngularJs_Page\UmrechnungMaster.js" />
+    <Content Include="AngularJs_Page\HalleMaster.js" />
+    <Content Include="AngularJs_Page\KostenartMaster.js" />
+    <Content Include="AngularJs_Page\PlanerGruppeMaster.js" />
+    <Content Include="AngularJs_Page\DerivatMaster.js" />
+    <Content Include="AngularJs_Page\ArchitekturMaster.js" />
+    <Content Include="AngularJs_Page\PositionData.js" />
+    <Content Include="ArchitekturMaster.aspx" />
+    <Content Include="BeschlussstandMaster.aspx" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="DerivatMaster.aspx" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="HalleMaster.aspx" />
+    <Content Include="img\Active.png" />
+    <Content Include="img\bfc_logo.PNG" />
+    <Content Include="img\CarImageWithName.png" />
+    <Content Include="img\bfc_logo_part1.PNG" />
+    <Content Include="img\Deactivate.png" />
+    <Content Include="img\graph_image.JPG" />
+    <Content Include="img\update_icon.ico" />
+    <Content Include="img\user2-160x160.jpg" />
+    <Content Include="KostenartMaster.aspx" />
+    <Content Include="Logout.html" />
+    <Content Include="PlanergruppeMaster.aspx" />
+    <Content Include="PositionData.aspx" />
+    <Content Include="PositionMaster.aspx" />
+    <Content Include="scss\base\_base.scss" />
+    <Content Include="scss\base\_mixins.scss" />
+    <Content Include="scss\base\_variables.scss" />
+    <Content Include="scss\layouts\_footer.scss" />
+    <Content Include="scss\layouts\_header.scss" />
+    <Content Include="scss\layouts\_nav.scss" />
+    <Content Include="scss\modules\_buttons.scss" />
+    <Content Include="scss\modules\_responsive.scss" />
+    <Content Include="scss\modules\_sections.scss" />
+    <Content Include="scss\modules\_typography.scss" />
+    <Content Include="scss\style.scss" />
+    <Content Include="ThemaMaster.aspx" />
+    <Content Include="UmrechnungMaster.aspx" />
+    <Content Include="UmsetzendesGewerkMaster.aspx" />
+    <Content Include="UserMaster.aspx" />
+    <Content Include="UserSiteMaster.Master" />
+    <Content Include="bin\AjaxControlToolkit.dll.refresh" />
+    <Content Include="bin\AJAXExtensionsToolbox.dll.refresh" />
+    <Content Include="bin\BitMiracle.Docotic.Pdf.dll.refresh" />
+    <Content Include="bin\FacebookAPI.dll.config" />
+    <Content Include="bin\FredCK.FCKeditorV2.dll.refresh" />
+    <Content Include="bin\FreeTextBox.dll.refresh" />
+    <Content Include="bin\Interop.AccessibilityCplAdminLib.dll.refresh" />
+    <Content Include="bin\itextsharp.dll.refresh" />
+    <Content Include="bin\Microsoft.Office.Interop.Excel.dll.refresh" />
+    <Content Include="bin\Microsoft.Office.Interop.Word.dll.refresh" />
+    <Content Include="bin\Newtonsoft.Json.dll.refresh" />
+    <Content Include="bin\SautinSoft.PdfFocus.dll.refresh" />
+    <Content Include="bin\Telerik.Web.Spreadsheet.dll.refresh" />
+    <Content Include="bin\Telerik.Web.UI.dll.refresh" />
+    <Content Include="bin\Telerik.Web.UI.Skins.dll.refresh" />
+    <Content Include="bin\Telerik.Windows.Documents.Flow.dll.refresh" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="webfonts\fa-brands-400.eot" />
+    <Content Include="webfonts\fa-brands-400.ttf" />
+    <Content Include="webfonts\fa-brands-400.woff" />
+    <Content Include="webfonts\fa-brands-400.woff2" />
+    <Content Include="webfonts\fa-regular-400.eot" />
+    <Content Include="webfonts\fa-regular-400.ttf" />
+    <Content Include="webfonts\fa-regular-400.woff" />
+    <Content Include="webfonts\fa-regular-400.woff2" />
+    <Content Include="webfonts\fa-solid-900.eot" />
+    <Content Include="webfonts\fa-solid-900.ttf" />
+    <Content Include="webfonts\fa-solid-900.woff" />
+    <Content Include="webfonts\fa-solid-900.woff2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AngularJs_Page\Login.js" />
+    <Content Include="bin\Ajax.dll" />
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\AjaxControlToolkit.pdb" />
+    <Content Include="bin\AJAXExtensionsToolbox.dll" />
+    <Content Include="bin\App_Licenses.dll" />
+    <Content Include="bin\ar\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\bcmail-jdk15-1.44.dll" />
+    <Content Include="bin\bcprov-jdk15-1.44.dll" />
+    <Content Include="bin\BitMiracle.Docotic.Pdf.xml" />
+    <Content Include="bin\commons-logging.dll" />
+    <Content Include="bin\cs\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\DataSetToExcel.dll" />
+    <Content Include="bin\de\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\DropDownChosen.dll" />
+    <Content Include="bin\DropDownChosen.pdb" />
+    <Content Include="bin\es\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\FacebookAPI.dll" />
+    <Content Include="bin\fontbox-1.8.9.dll" />
+    <Content Include="bin\FredCK.FCKeditorV2.dll" />
+    <Content Include="bin\FreeTextBox.dll" />
+    <Content Include="bin\fr\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\he\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\hi\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\HWellnessEncr.dll" />
+    <Content Include="bin\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="bin\icu4j-3.8.dll" />
+    <Content Include="bin\ikvm-native-win32-x64.dll" />
+    <Content Include="bin\ikvm-native-win32-x86.dll" />
+    <Content Include="bin\IKVM.AWT.WinForms.dll" />
+    <Content Include="bin\IKVM.OpenJDK.Beans.dll" />
+    <Content Include="bin\IKVM.OpenJDK.Charsets.dll" />
+    <Content Include="bin\IKVM.OpenJDK.Corba.dll" />
+    <Content Include="bin\IKVM.OpenJDK.Core.dll" />
+    <Content Include="bin\IKVM.OpenJDK.Jdbc.dll" />
+    <Content Include="bin\IKVM.OpenJDK.Management.dll" />
+    <Content Include="bin\IKVM.OpenJDK.Media.dll" />
+    <Content Include="bin\IKVM.OpenJDK.Misc.dll" />
+    <Content Include="bin\IKVM.OpenJDK.Naming.dll" />
+    <Content Include="bin\IKVM.OpenJDK.Remoting.dll" />
+    <Content Include="bin\IKVM.OpenJDK.Security.dll" />
+    <Content Include="bin\IKVM.OpenJDK.SwingAWT.dll" />
+    <Content Include="bin\IKVM.OpenJDK.Text.dll" />
+    <Content Include="bin\IKVM.OpenJDK.Tools.dll" />
+    <Content Include="bin\IKVM.OpenJDK.Util.dll" />
+    <Content Include="bin\IKVM.OpenJDK.XML.API.dll" />
+    <Content Include="bin\IKVM.OpenJDK.XML.Bind.dll" />
+    <Content Include="bin\IKVM.OpenJDK.XML.Crypto.dll" />
+    <Content Include="bin\IKVM.OpenJDK.XML.Parse.dll" />
+    <Content Include="bin\IKVM.OpenJDK.XML.Transform.dll" />
+    <Content Include="bin\IKVM.OpenJDK.XML.WebServices.dll" />
+    <Content Include="bin\IKVM.OpenJDK.XML.XPath.dll" />
+    <Content Include="bin\IKVM.Reflection.dll" />
+    <Content Include="bin\IKVM.Runtime.dll" />
+    <Content Include="bin\IKVM.Runtime.JNI.dll" />
+    <Content Include="bin\itextsharp.dll" />
+    <Content Include="bin\itextsharp.xml" />
+    <Content Include="bin\it\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\ja\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\jempbox-1.8.9.dll" />
+    <Content Include="bin\jpeg62.dll" />
+    <Content Include="bin\junit.dll" />
+    <Content Include="bin\ko\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\microsoft.office.interop.excel.dll" />
+    <Content Include="bin\Microsoft.Office.Interop.Excel.xml" />
+    <Content Include="bin\Microsoft.Office.Interop.Word.xml" />
+    <Content Include="bin\Microsoft.Vbe.Interop.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\nl\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\office.dll" />
+    <Content Include="bin\office.xml" />
+    <Content Include="bin\pdfbox-1.8.9.dll" />
+    <Content Include="bin\pt\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\ru\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\SautinSoft.PdfFocus.dll" />
+    <Content Include="bin\System.Device.dll" />
+    <Content Include="bin\Telerik.Web.Spreadsheet.dll" />
+    <Content Include="bin\Telerik.Web.Spreadsheet.xml" />
+    <Content Include="bin\Telerik.Web.UI.dll" />
+    <Content Include="bin\Telerik.Web.UI.Skins.dll" />
+    <Content Include="bin\Telerik.Web.UI.xml" />
+    <Content Include="bin\Telerik.Windows.Documents.Core.dll" />
+    <Content Include="bin\Telerik.Windows.Documents.Core.xml" />
+    <Content Include="bin\Telerik.Windows.Documents.Flow.dll" />
+    <Content Include="bin\Telerik.Windows.Documents.Flow.xml" />
+    <Content Include="bin\Telerik.Windows.Documents.Spreadsheet.dll" />
+    <Content Include="bin\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll" />
+    <Content Include="bin\Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.xml" />
+    <Content Include="bin\Telerik.Windows.Documents.Spreadsheet.xml" />
+    <Content Include="bin\Telerik.Windows.Zip.dll" />
+    <Content Include="bin\Telerik.Windows.Zip.xml" />
+    <Content Include="bin\tr-TR\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\wkhtmltopdf\libeay32.dll" />
+    <Content Include="bin\wkhtmltopdf\libgcc_s_dw2-1.dll" />
+    <Content Include="bin\wkhtmltopdf\mingwm10.dll" />
+    <Content Include="bin\wkhtmltopdf\ssleay32.dll" />
+    <Content Include="bin\wkhtmltopdf\uninstall.exe" />
+    <Content Include="bin\wkhtmltopdf\wkhtmltoimage.exe" />
+    <Content Include="bin\wkhtmltopdf\wkhtmltopdf.exe" />
+    <Content Include="bin\zh-CHS\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\zh-CHT\AjaxControlToolkit.resources.dll" />
+    <Content Include="Login.aspx" />
+    <Content Include="AngularJs\additional-methods.min.js" />
+    <Content Include="AngularJs\adminlte.min.js" />
+    <Content Include="AngularJs\angular.min.js" />
+    <Content Include="AngularJs\bootstrap.bundle.min.js" />
+    <Content Include="AngularJs\bootstrap.min.js" />
+    <Content Include="AngularJs\Chart.min.js" />
+    <Content Include="AngularJs\dataTables.bootstrap.min.js" />
+    <Content Include="AngularJs\demo.js" />
+    <Content Include="AngularJs\dirPaginate.js" />
+    <Content Include="AngularJs\FileSaver.js" />
+    <Content Include="AngularJs\html2canvas.min.js" />
+    <Content Include="AngularJs\jquery-2.2.3.min.js" />
+    <Content Include="AngularJs\jquery-ui.min.js" />
+    <Content Include="AngularJs\jquery.dataTables.min.js" />
+    <Content Include="AngularJs\jquery.knob.js" />
+    <Content Include="AngularJs\jquery.min.js" />
+    <Content Include="AngularJs\jquery.validate.min.js" />
+    <Content Include="AngularJs\jspdf.min.js" />
+    <Content Include="AngularJs\jszip.js" />
+    <Content Include="AngularJs\jszip.min.js" />
+    <Content Include="AngularJs\ng-file-upload-shim.min.js" />
+    <Content Include="AngularJs\ng-file-upload.min.js" />
+    <Content Include="AngularJs\pdfmake.min.js" />
+    <Content Include="AngularJs\pptxgen.min.js" />
+    <Content Include="AngularJs\smart-table.js" />
+    <Content Include="AngularJs\table2excel.js" />
+    <Content Include="AngularJs\toastr.js" />
+    <Content Include="AngularJs\ui-bootstrap-tpls.min.js" />
+    <Content Include="AngularJs\ui-bootstrap.min.js" />
+    <Content Include="AngularJs\xlsx.full.min.js" />
+    <Content Include="css\adminlte.min.css" />
+    <Content Include="css\all.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\dataTables.bootstrap.min.css" />
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\ionicons.min.css" />
+    <Content Include="css\jquery.simpleLens.css" />
+    <Content Include="css\jquery.smartmenus.bootstrap.css" />
+    <Content Include="css\mystyle.css" />
+    <Content Include="css\nouislider.css" />
+    <Content Include="css\pagination.css" />
+    <Content Include="css\select2-bootstrap4.min.css" />
+    <Content Include="css\select2.min.css" />
+    <Content Include="css\sequence-theme.modern-slide-in.css" />
+    <Content Include="css\slick.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\theme-color\bridge-theme.css" />
+    <Content Include="css\theme-color\dark-red-theme.css" />
+    <Content Include="css\theme-color\default-theme.css" />
+    <Content Include="css\theme-color\green-theme.css" />
+    <Content Include="css\theme-color\lite-blue-theme.css" />
+    <Content Include="css\theme-color\orange-theme.css" />
+    <Content Include="css\theme-color\pink-theme.css" />
+    <Content Include="css\theme-color\purple-theme.css" />
+    <Content Include="css\theme-color\red-theme.css" />
+    <Content Include="css\theme-color\yellow-theme.css" />
+    <Content Include="css\toastr.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="img\bfc_logo1.PNG" />
+    <Content Include="img\boxed-bg.jpg" />
+    <Content Include="img\boxed-bg.png" />
+    <Content Include="img\close-icon.png" />
+    <Content Include="img\man-small-1.jpg" />
+    <Content Include="img\testimonial-bg-1.jpg" />
+    <Content Include="js\additional-methods.min.js" />
+    <Content Include="js\adminlte.min.js" />
+    <Content Include="js\bootstrap.bundle.min.js" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\custom.js" />
+    <Content Include="js\demo.js" />
+    <Content Include="js\dirPaginate.js" />
+    <Content Include="js\jquery.simpleGallery.js" />
+    <Content Include="js\jquery.simpleLens.js" />
+    <Content Include="js\jquery.smartmenus.bootstrap.js" />
+    <Content Include="js\jquery.smartmenus.js" />
+    <Content Include="js\jquery.validate.min.js" />
+    <Content Include="js\nouislider.js" />
+    <Content Include="js\select2.full.min.js" />
+    <Content Include="js\sequence-theme.modern-slide-in.js" />
+    <Content Include="js\sequence.js" />
+    <Content Include="js\slick.js" />
+    <Content Include="Dashboard.aspx" />
+    <Content Include="AngularJs_Page\dashboard.js" />
+    <Content Include="Web.config" />
+    <Content Include="webfonts\fa-brands-400.svg" />
+    <Content Include="webfonts\fa-regular-400.svg" />
+    <Content Include="webfonts\fa-solid-900.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddNewPosition.aspx.cs">
+      <DependentUpon>AddNewPosition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddNewPosition.aspx.designer.cs">
+      <DependentUpon>AddNewPosition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\DBController.cs" />
+    <Compile Include="App_Code\Utils.cs" />
+    <Compile Include="ArchitekturMaster.aspx.cs">
+      <DependentUpon>ArchitekturMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ArchitekturMaster.aspx.designer.cs">
+      <DependentUpon>ArchitekturMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BeschlussstandMaster.aspx.cs">
+      <DependentUpon>BeschlussstandMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BeschlussstandMaster.aspx.designer.cs">
+      <DependentUpon>BeschlussstandMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DerivatMaster.aspx.cs">
+      <DependentUpon>DerivatMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DerivatMaster.aspx.designer.cs">
+      <DependentUpon>DerivatMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HalleMaster.aspx.cs">
+      <DependentUpon>HalleMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HalleMaster.aspx.designer.cs">
+      <DependentUpon>HalleMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KostenartMaster.aspx.cs">
+      <DependentUpon>KostenartMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KostenartMaster.aspx.designer.cs">
+      <DependentUpon>KostenartMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlanergruppeMaster.aspx.cs">
+      <DependentUpon>PlanergruppeMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlanergruppeMaster.aspx.designer.cs">
+      <DependentUpon>PlanergruppeMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PositionData.aspx.cs">
+      <DependentUpon>PositionData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PositionData.aspx.designer.cs">
+      <DependentUpon>PositionData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PositionMaster.aspx.cs">
+      <DependentUpon>PositionMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PositionMaster.aspx.designer.cs">
+      <DependentUpon>PositionMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ThemaMaster.aspx.cs">
+      <DependentUpon>ThemaMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThemaMaster.aspx.designer.cs">
+      <DependentUpon>ThemaMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UmrechnungMaster.aspx.cs">
+      <DependentUpon>UmrechnungMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UmrechnungMaster.aspx.designer.cs">
+      <DependentUpon>UmrechnungMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UmsetzendesGewerkMaster.aspx.cs">
+      <DependentUpon>UmsetzendesGewerkMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UmsetzendesGewerkMaster.aspx.designer.cs">
+      <DependentUpon>UmsetzendesGewerkMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserMaster.aspx.cs">
+      <DependentUpon>UserMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserMaster.aspx.designer.cs">
+      <DependentUpon>UserMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserSiteMaster.Master.cs">
+      <DependentUpon>UserSiteMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserSiteMaster.Master.designer.cs">
+      <DependentUpon>UserSiteMaster.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54275</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44344/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,771 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\ASHMAUR\Desktop\EquipmentPlanning</_PublishTargetUrl>
+    <History>False|2022-03-29T21:43:08.4905073Z;False|2022-03-30T03:11:22.2195999+05:30;False|2022-03-30T03:10:04.9040838+05:30;False|2022-03-30T03:07:42.3860850+05:30;True|2022-03-08T13:22:48.2056634+05:30;False|2022-03-08T13:19:30.6668739+05:30;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="AddNewPosition.aspx">
+      <publishTime>03/07/2022 13:27:49</publishTime>
+    </File>
+    <File Include="AngularJs/additional-methods.min.js">
+      <publishTime>03/06/2022 00:12:33</publishTime>
+    </File>
+    <File Include="AngularJs/adminlte.min.js">
+      <publishTime>03/06/2022 00:12:33</publishTime>
+    </File>
+    <File Include="AngularJs/angular.min.js">
+      <publishTime>03/06/2022 00:12:33</publishTime>
+    </File>
+    <File Include="AngularJs/bootstrap.bundle.min.js">
+      <publishTime>03/06/2022 00:12:33</publishTime>
+    </File>
+    <File Include="AngularJs/bootstrap.min.js">
+      <publishTime>03/06/2022 00:12:33</publishTime>
+    </File>
+    <File Include="AngularJs/Chart.min.js">
+      <publishTime>03/06/2022 00:12:33</publishTime>
+    </File>
+    <File Include="AngularJs/dataTables.bootstrap.min.js">
+      <publishTime>03/06/2022 00:12:33</publishTime>
+    </File>
+    <File Include="AngularJs/demo.js">
+      <publishTime>03/06/2022 00:12:33</publishTime>
+    </File>
+    <File Include="AngularJs/dirPaginate.js">
+      <publishTime>03/06/2022 00:12:33</publishTime>
+    </File>
+    <File Include="AngularJs/FileSaver.js">
+      <publishTime>03/06/2022 00:12:33</publishTime>
+    </File>
+    <File Include="AngularJs/html2canvas.min.js">
+      <publishTime>03/06/2022 00:12:33</publishTime>
+    </File>
+    <File Include="AngularJs/jquery-2.2.3.min.js">
+      <publishTime>03/06/2022 00:12:33</publishTime>
+    </File>
+    <File Include="AngularJs/jquery-ui.min.js">
+      <publishTime>03/06/2022 00:12:33</publishTime>
+    </File>
+    <File Include="AngularJs/jquery.dataTables.min.js">
+      <publishTime>03/06/2022 00:12:33</publishTime>
+    </File>
+    <File Include="AngularJs/jquery.knob.js">
+      <publishTime>03/06/2022 00:12:33</publishTime>
+    </File>
+    <File Include="AngularJs/jquery.min.js">
+      <publishTime>03/06/2022 00:12:33</publishTime>
+    </File>
+    <File Include="AngularJs/jquery.validate.min.js">
+      <publishTime>03/06/2022 00:12:33</publishTime>
+    </File>
+    <File Include="AngularJs/jspdf.min.js">
+      <publishTime>03/06/2022 00:12:33</publishTime>
+    </File>
+    <File Include="AngularJs/jszip.js">
+      <publishTime>03/06/2022 00:12:33</publishTime>
+    </File>
+    <File Include="AngularJs/jszip.min.js">
+      <publishTime>03/06/2022 00:12:33</publishTime>
+    </File>
+    <File Include="AngularJs/ng-file-upload-shim.min.js">
+      <publishTime>03/06/2022 00:12:33</publishTime>
+    </File>
+    <File Include="AngularJs/ng-file-upload.min.js">
+      <publishTime>03/06/2022 00:12:33</publishTime>
+    </File>
+    <File Include="AngularJs/pdfmake.min.js">
+      <publishTime>03/06/2022 00:12:33</publishTime>
+    </File>
+    <File Include="AngularJs/pptxgen.min.js">
+      <publishTime>03/06/2022 00:12:33</publishTime>
+    </File>
+    <File Include="AngularJs/smart-table.js">
+      <publishTime>03/06/2022 00:12:33</publishTime>
+    </File>
+    <File Include="AngularJs/table2excel.js">
+      <publishTime>03/06/2022 00:12:33</publishTime>
+    </File>
+    <File Include="AngularJs/toastr.js">
+      <publishTime>03/06/2022 00:12:33</publishTime>
+    </File>
+    <File Include="AngularJs/ui-bootstrap-tpls.min.js">
+      <publishTime>03/06/2022 00:12:33</publishTime>
+    </File>
+    <File Include="AngularJs/ui-bootstrap.min.js">
+      <publishTime>03/06/2022 00:12:33</publishTime>
+    </File>
+    <File Include="AngularJs/xlsx.full.min.js">
+      <publishTime>03/06/2022 00:12:33</publishTime>
+    </File>
+    <File Include="AngularJs_Page/AddNewPosition.js">
+      <publishTime>03/07/2022 16:47:19</publishTime>
+    </File>
+    <File Include="AngularJs_Page/dashboard.js">
+      <publishTime>03/07/2022 14:15:14</publishTime>
+    </File>
+    <File Include="AngularJs_Page/index.js">
+      <publishTime>03/07/2022 14:15:13</publishTime>
+    </File>
+    <File Include="AngularJs_Page/Login.js">
+      <publishTime>03/07/2022 14:15:13</publishTime>
+    </File>
+    <File Include="AngularJs_Page/PositionData.js">
+      <publishTime>03/08/2022 11:57:41</publishTime>
+    </File>
+    <File Include="bin/Ajax.dll">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/AjaxControlToolkit.dll">
+      <publishTime>05/20/2020 14:04:00</publishTime>
+    </File>
+    <File Include="bin/AjaxControlToolkit.dll.refresh">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/AjaxControlToolkit.pdb">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/AJAXExtensionsToolbox.dll">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/AJAXExtensionsToolbox.dll.refresh">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/App_Licenses.dll">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/ar/AjaxControlToolkit.resources.dll">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/bcmail-jdk15-1.44.dll">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/bcprov-jdk15-1.44.dll">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/BitMiracle.Docotic.Pdf.dll.refresh">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/BitMiracle.Docotic.Pdf.xml">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/commons-logging.dll">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/cs/AjaxControlToolkit.resources.dll">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/DataSetToExcel.dll">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/de/AjaxControlToolkit.resources.dll">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/DropDownChosen.dll">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/DropDownChosen.pdb">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/Equipment_Planning.dll">
+      <publishTime>03/08/2022 13:19:27</publishTime>
+    </File>
+    <File Include="bin/Equipment_Planning.pdb">
+      <publishTime>03/08/2022 13:19:27</publishTime>
+    </File>
+    <File Include="bin/es/AjaxControlToolkit.resources.dll">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/FacebookAPI.dll">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/FacebookAPI.dll.config">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/fontbox-1.8.9.dll">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/fr/AjaxControlToolkit.resources.dll">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/FredCK.FCKeditorV2.dll">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/FredCK.FCKeditorV2.dll.refresh">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/FreeTextBox.dll">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/FreeTextBox.dll.refresh">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/he/AjaxControlToolkit.resources.dll">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/hi/AjaxControlToolkit.resources.dll">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/HWellnessEncr.dll">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/ICSharpCode.SharpZipLib.dll">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/icu4j-3.8.dll">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/ikvm-native-win32-x64.dll">
+      <publishTime>03/06/2022 00:27:18</publishTime>
+    </File>
+    <File Include="bin/ikvm-native-win32-x86.dll">
+      <publishTime>03/06/2022 00:27:18</publishTime>
+    </File>
+    <File Include="bin/IKVM.AWT.WinForms.dll">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/IKVM.OpenJDK.Beans.dll">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/IKVM.OpenJDK.Charsets.dll">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/IKVM.OpenJDK.Corba.dll">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/IKVM.OpenJDK.Core.dll">
+      <publishTime>03/06/2022 00:27:18</publishTime>
+    </File>
+    <File Include="bin/IKVM.OpenJDK.Jdbc.dll">
+      <publishTime>03/06/2022 00:27:18</publishTime>
+    </File>
+    <File Include="bin/IKVM.OpenJDK.Management.dll">
+      <publishTime>03/06/2022 00:27:18</publishTime>
+    </File>
+    <File Include="bin/IKVM.OpenJDK.Media.dll">
+      <publishTime>03/06/2022 00:27:18</publishTime>
+    </File>
+    <File Include="bin/IKVM.OpenJDK.Misc.dll">
+      <publishTime>03/06/2022 00:27:18</publishTime>
+    </File>
+    <File Include="bin/IKVM.OpenJDK.Naming.dll">
+      <publishTime>03/06/2022 00:27:18</publishTime>
+    </File>
+    <File Include="bin/IKVM.OpenJDK.Remoting.dll">
+      <publishTime>03/06/2022 00:27:18</publishTime>
+    </File>
+    <File Include="bin/IKVM.OpenJDK.Security.dll">
+      <publishTime>03/06/2022 00:27:18</publishTime>
+    </File>
+    <File Include="bin/IKVM.OpenJDK.SwingAWT.dll">
+      <publishTime>03/06/2022 00:27:18</publishTime>
+    </File>
+    <File Include="bin/IKVM.OpenJDK.Text.dll">
+      <publishTime>03/06/2022 00:27:18</publishTime>
+    </File>
+    <File Include="bin/IKVM.OpenJDK.Tools.dll">
+      <publishTime>03/06/2022 00:27:18</publishTime>
+    </File>
+    <File Include="bin/IKVM.OpenJDK.Util.dll">
+      <publishTime>03/06/2022 00:27:18</publishTime>
+    </File>
+    <File Include="bin/IKVM.OpenJDK.XML.API.dll">
+      <publishTime>03/06/2022 00:27:18</publishTime>
+    </File>
+    <File Include="bin/IKVM.OpenJDK.XML.Bind.dll">
+      <publishTime>03/06/2022 00:27:18</publishTime>
+    </File>
+    <File Include="bin/IKVM.OpenJDK.XML.Crypto.dll">
+      <publishTime>03/06/2022 00:27:18</publishTime>
+    </File>
+    <File Include="bin/IKVM.OpenJDK.XML.Parse.dll">
+      <publishTime>03/06/2022 00:27:18</publishTime>
+    </File>
+    <File Include="bin/IKVM.OpenJDK.XML.Transform.dll">
+      <publishTime>03/06/2022 00:27:18</publishTime>
+    </File>
+    <File Include="bin/IKVM.OpenJDK.XML.WebServices.dll">
+      <publishTime>03/06/2022 00:27:18</publishTime>
+    </File>
+    <File Include="bin/IKVM.OpenJDK.XML.XPath.dll">
+      <publishTime>03/06/2022 00:27:18</publishTime>
+    </File>
+    <File Include="bin/IKVM.Reflection.dll">
+      <publishTime>03/06/2022 00:27:18</publishTime>
+    </File>
+    <File Include="bin/IKVM.Runtime.dll">
+      <publishTime>03/06/2022 00:27:18</publishTime>
+    </File>
+    <File Include="bin/IKVM.Runtime.JNI.dll">
+      <publishTime>03/06/2022 00:27:18</publishTime>
+    </File>
+    <File Include="bin/Interop.AccessibilityCplAdminLib.dll.refresh">
+      <publishTime>03/06/2022 00:27:18</publishTime>
+    </File>
+    <File Include="bin/it/AjaxControlToolkit.resources.dll">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/itextsharp.dll">
+      <publishTime>03/06/2022 00:27:18</publishTime>
+    </File>
+    <File Include="bin/itextsharp.dll.refresh">
+      <publishTime>03/06/2022 00:27:18</publishTime>
+    </File>
+    <File Include="bin/itextsharp.xml">
+      <publishTime>03/06/2022 00:27:18</publishTime>
+    </File>
+    <File Include="bin/ja/AjaxControlToolkit.resources.dll">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/jempbox-1.8.9.dll">
+      <publishTime>03/06/2022 00:27:18</publishTime>
+    </File>
+    <File Include="bin/jpeg62.dll">
+      <publishTime>03/06/2022 00:27:18</publishTime>
+    </File>
+    <File Include="bin/junit.dll">
+      <publishTime>03/06/2022 00:27:18</publishTime>
+    </File>
+    <File Include="bin/ko/AjaxControlToolkit.resources.dll">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/microsoft.office.interop.excel.dll">
+      <publishTime>03/06/2022 00:27:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Office.Interop.Excel.dll.refresh">
+      <publishTime>03/06/2022 00:27:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Office.Interop.Excel.xml">
+      <publishTime>03/06/2022 00:27:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Office.Interop.Word.dll.refresh">
+      <publishTime>03/06/2022 00:27:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Office.Interop.Word.xml">
+      <publishTime>03/06/2022 00:27:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Vbe.Interop.dll">
+      <publishTime>03/06/2022 00:27:18</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>03/17/2021 20:03:34</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll.refresh">
+      <publishTime>03/06/2022 00:27:21</publishTime>
+    </File>
+    <File Include="bin/nl/AjaxControlToolkit.resources.dll">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/office.dll">
+      <publishTime>03/06/2022 00:27:21</publishTime>
+    </File>
+    <File Include="bin/office.xml">
+      <publishTime>03/06/2022 00:27:21</publishTime>
+    </File>
+    <File Include="bin/pdfbox-1.8.9.dll">
+      <publishTime>03/06/2022 00:27:21</publishTime>
+    </File>
+    <File Include="bin/pt/AjaxControlToolkit.resources.dll">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/ru/AjaxControlToolkit.resources.dll">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/SautinSoft.PdfFocus.dll">
+      <publishTime>03/06/2022 00:27:21</publishTime>
+    </File>
+    <File Include="bin/SautinSoft.PdfFocus.dll.refresh">
+      <publishTime>03/06/2022 00:27:21</publishTime>
+    </File>
+    <File Include="bin/System.Device.dll">
+      <publishTime>03/06/2022 00:27:21</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.Spreadsheet.dll">
+      <publishTime>03/06/2022 00:27:21</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.Spreadsheet.dll.refresh">
+      <publishTime>03/06/2022 00:27:21</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.Spreadsheet.xml">
+      <publishTime>03/06/2022 00:27:21</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.UI.dll">
+      <publishTime>03/06/2022 00:27:21</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.UI.dll.refresh">
+      <publishTime>03/06/2022 00:27:21</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.UI.Skins.dll">
+      <publishTime>03/06/2022 00:27:21</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.UI.Skins.dll.refresh">
+      <publishTime>03/06/2022 00:27:21</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.UI.xml">
+      <publishTime>03/06/2022 00:27:21</publishTime>
+    </File>
+    <File Include="bin/Telerik.Windows.Documents.Core.dll">
+      <publishTime>03/06/2022 00:27:21</publishTime>
+    </File>
+    <File Include="bin/Telerik.Windows.Documents.Core.xml">
+      <publishTime>03/06/2022 00:27:21</publishTime>
+    </File>
+    <File Include="bin/Telerik.Windows.Documents.Flow.dll">
+      <publishTime>03/06/2022 00:27:21</publishTime>
+    </File>
+    <File Include="bin/Telerik.Windows.Documents.Flow.dll.refresh">
+      <publishTime>03/06/2022 00:27:21</publishTime>
+    </File>
+    <File Include="bin/Telerik.Windows.Documents.Flow.xml">
+      <publishTime>03/06/2022 00:27:21</publishTime>
+    </File>
+    <File Include="bin/Telerik.Windows.Documents.Spreadsheet.dll">
+      <publishTime>03/06/2022 00:27:21</publishTime>
+    </File>
+    <File Include="bin/Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.dll">
+      <publishTime>03/06/2022 00:27:21</publishTime>
+    </File>
+    <File Include="bin/Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml.xml">
+      <publishTime>03/06/2022 00:27:21</publishTime>
+    </File>
+    <File Include="bin/Telerik.Windows.Documents.Spreadsheet.xml">
+      <publishTime>03/06/2022 00:27:21</publishTime>
+    </File>
+    <File Include="bin/Telerik.Windows.Zip.dll">
+      <publishTime>03/06/2022 00:27:21</publishTime>
+    </File>
+    <File Include="bin/Telerik.Windows.Zip.xml">
+      <publishTime>03/06/2022 00:27:21</publishTime>
+    </File>
+    <File Include="bin/tr-TR/AjaxControlToolkit.resources.dll">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/wkhtmltopdf/libeay32.dll">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/wkhtmltopdf/libgcc_s_dw2-1.dll">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/wkhtmltopdf/mingwm10.dll">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/wkhtmltopdf/ssleay32.dll">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/wkhtmltopdf/uninstall.exe">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/wkhtmltopdf/wkhtmltoimage.exe">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/wkhtmltopdf/wkhtmltopdf.exe">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/zh-CHS/AjaxControlToolkit.resources.dll">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="bin/zh-CHT/AjaxControlToolkit.resources.dll">
+      <publishTime>03/06/2022 00:27:17</publishTime>
+    </File>
+    <File Include="css/adminlte.min.css">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="css/all.min.css">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="css/bootstrap.css">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="css/bootstrap.min.css">
+      <publishTime>03/06/2022 19:45:52</publishTime>
+    </File>
+    <File Include="css/dataTables.bootstrap.min.css">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="css/font-awesome.css">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="css/ionicons.min.css">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="css/jquery.simpleLens.css">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="css/jquery.smartmenus.bootstrap.css">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="css/mystyle.css">
+      <publishTime>03/07/2022 15:32:44</publishTime>
+    </File>
+    <File Include="css/nouislider.css">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="css/pagination.css">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="css/select2-bootstrap4.min.css">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="css/select2.min.css">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="css/sequence-theme.modern-slide-in.css">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="css/slick.css">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="css/style.css">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="css/theme-color/bridge-theme.css">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="css/theme-color/dark-red-theme.css">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="css/theme-color/default-theme.css">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="css/theme-color/green-theme.css">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="css/theme-color/lite-blue-theme.css">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="css/theme-color/orange-theme.css">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="css/theme-color/pink-theme.css">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="css/theme-color/purple-theme.css">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="css/theme-color/red-theme.css">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="css/theme-color/yellow-theme.css">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="css/toastr.css">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="dashboard.aspx">
+      <publishTime>03/07/2022 03:46:42</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.eot">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.svg">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.ttf">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.woff">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.woff2">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="fonts/FontAwesome.otf">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="img/bfc_logo.PNG">
+      <publishTime>03/06/2022 15:00:52</publishTime>
+    </File>
+    <File Include="img/bfc_logo1.PNG">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="img/bfc_logo_part1.PNG">
+      <publishTime>03/06/2022 14:20:40</publishTime>
+    </File>
+    <File Include="img/boxed-bg.jpg">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="img/boxed-bg.png">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="img/CarImageWithName.png">
+      <publishTime>03/06/2022 14:44:29</publishTime>
+    </File>
+    <File Include="img/close-icon.png">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="img/graph_image.JPG">
+      <publishTime>03/07/2022 03:40:39</publishTime>
+    </File>
+    <File Include="img/man-small-1.jpg">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="img/testimonial-bg-1.jpg">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="img/user2-160x160.jpg">
+      <publishTime>03/06/2022 15:30:19</publishTime>
+    </File>
+    <File Include="js/additional-methods.min.js">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="js/adminlte.min.js">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="js/bootstrap.bundle.min.js">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="js/bootstrap.js">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="js/custom.js">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="js/demo.js">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="js/dirPaginate.js">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="js/jquery.simpleGallery.js">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="js/jquery.simpleLens.js">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="js/jquery.smartmenus.bootstrap.js">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="js/jquery.smartmenus.js">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="js/jquery.validate.min.js">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="js/nouislider.js">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="js/select2.full.min.js">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="js/sequence-theme.modern-slide-in.js">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="js/sequence.js">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="js/slick.js">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>03/07/2022 11:43:25</publishTime>
+    </File>
+    <File Include="Logout.html">
+      <publishTime>03/07/2022 11:42:00</publishTime>
+    </File>
+    <File Include="PositionData.aspx">
+      <publishTime>03/07/2022 16:49:44</publishTime>
+    </File>
+    <File Include="scss/base/_base.scss">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="scss/base/_mixins.scss">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="scss/base/_variables.scss">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="scss/layouts/_footer.scss">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="scss/layouts/_header.scss">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="scss/layouts/_nav.scss">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="scss/modules/_buttons.scss">
+      <publishTime>03/06/2022 00:12:56</publishTime>
+    </File>
+    <File Include="scss/modules/_responsive.scss">
+      <publishTime>03/06/2022 00:12:57</publishTime>
+    </File>
+    <File Include="scss/modules/_sections.scss">
+      <publishTime>03/06/2022 00:12:57</publishTime>
+    </File>
+    <File Include="scss/modules/_typography.scss">
+      <publishTime>03/06/2022 00:12:57</publishTime>
+    </File>
+    <File Include="scss/style.scss">
+      <publishTime>03/06/2022 00:12:57</publishTime>
+    </File>
+    <File Include="UserSiteMaster.Master">
+      <publishTime>03/07/2022 16:27:02</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>03/08/2022 13:19:27</publishTime>
+    </File>
+    <File Include="webfonts/fa-brands-400.eot">
+      <publishTime>03/06/2022 00:12:57</publishTime>
+    </File>
+    <File Include="webfonts/fa-brands-400.svg">
+      <publishTime>03/06/2022 00:12:57</publishTime>
+    </File>
+    <File Include="webfonts/fa-brands-400.ttf">
+      <publishTime>03/06/2022 00:12:57</publishTime>
+    </File>
+    <File Include="webfonts/fa-brands-400.woff">
+      <publishTime>03/06/2022 00:12:57</publishTime>
+    </File>
+    <File Include="webfonts/fa-brands-400.woff2">
+      <publishTime>03/06/2022 00:12:57</publishTime>
+    </File>
+    <File Include="webfonts/fa-regular-400.eot">
+      <publishTime>03/06/2022 00:12:57</publishTime>
+    </File>
+    <File Include="webfonts/fa-regular-400.svg">
+      <publishTime>03/06/2022 00:12:57</publishTime>
+    </File>
+    <File Include="webfonts/fa-regular-400.ttf">
+      <publishTime>03/06/2022 00:12:57</publishTime>
+    </File>
+    <File Include="webfonts/fa-regular-400.woff">
+      <publishTime>03/06/2022 00:12:57</publishTime>
+    </File>
+    <File Include="webfonts/fa-regular-400.woff2">
+      <publishTime>03/06/2022 00:12:57</publishTime>
+    </File>
+    <File Include="webfonts/fa-solid-900.eot">
+      <publishTime>03/06/2022 00:12:57</publishTime>
+    </File>
+    <File Include="webfonts/fa-solid-900.svg">
+      <publishTime>03/06/2022 00:12:57</publishTime>
+    </File>
+    <File Include="webfonts/fa-solid-900.ttf">
+      <publishTime>03/06/2022 00:12:57</publishTime>
+    </File>
+    <File Include="webfonts/fa-solid-900.woff">
+      <publishTime>03/06/2022 00:12:57</publishTime>
+    </File>
+    <File Include="webfonts/fa-solid-900.woff2">
+      <publishTime>03/06/2022 00:12:57</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

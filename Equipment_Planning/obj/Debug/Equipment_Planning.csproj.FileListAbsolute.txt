@@ -1,0 +1,8 @@
+C:\Ashutosh Maurya\Projects\Equipment_Planning\Equipment_Planning\bin\Equipment_Planning.dll.config
+C:\Ashutosh Maurya\Projects\Equipment_Planning\Equipment_Planning\bin\Equipment_Planning.dll
+C:\Ashutosh Maurya\Projects\Equipment_Planning\Equipment_Planning\bin\Equipment_Planning.pdb
+C:\Ashutosh Maurya\Projects\Equipment_Planning\Equipment_Planning\obj\Debug\Equipment_Planning.csprojAssemblyReference.cache
+C:\Ashutosh Maurya\Projects\Equipment_Planning\Equipment_Planning\obj\Debug\Equipment_Planning.csproj.CoreCompileInputs.cache
+C:\Ashutosh Maurya\Projects\Equipment_Planning\Equipment_Planning\obj\Debug\Equipment_Planning.csproj.CopyComplete
+C:\Ashutosh Maurya\Projects\Equipment_Planning\Equipment_Planning\obj\Debug\Equipment_Planning.dll
+C:\Ashutosh Maurya\Projects\Equipment_Planning\Equipment_Planning\obj\Debug\Equipment_Planning.pdb

@@ -1,0 +1,627 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UserSiteMaster.master.cs" Inherits="Equipment_Planning.User.UserSiteMaster" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MIG LOG</title>
+    <link rel='icon' href="img/bfc_logo_part1.PNG" type='image/x-icon' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="css/adminlte.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/toastr.css" />
+    <link rel="stylesheet" href="css/mystyle.css" />
+    <link href="css/pagination.css" rel="stylesheet" />
+    <link href="css/dataTables.bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="AngularJs/jquery.min.js"></script>
+    <script type="text/javascript" src="AngularJs/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="AngularJs/angular.min.js"></script>
+    <script type="text/javascript" src="AngularJs/ui-bootstrap.min.js"></script>
+    <script type="text/javascript" src="AngularJs/ui-bootstrap-tpls.min.js"></script>
+    <script type="text/javascript" src="AngularJs/smart-table.js"></script>
+    <script type="text/javascript" src="AngularJs/dirPaginate.js"></script>
+    <script type="text/javascript" src="AngularJs/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="AngularJs/Chart.min.js"></script>
+    <script type="text/javascript" src="AngularJs/toastr.js"></script>
+    <script type="text/javascript" src="AngularJs/pdfmake.min.js"></script>
+    <script type="text/javascript" src="AngularJs/html2canvas.min.js"></script>
+    <script type="text/javascript" src="AngularJs/table2excel.js"></script>
+    <script type="text/javascript" src="AngularJs/jspdf.min.js"></script>
+    <script type="text/javascript" src="AngularJs/xlsx.full.min.js"></script>
+    <script src="AngularJs/ng-file-upload-shim.min.js"></script>
+    <script src="AngularJs/ng-file-upload.min.js"></script>
+    <script src="js/dirPaginate.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <script>
+        toastr.options = {
+            "closeButton": false,
+            "debug": false,
+            "newestOnTop": false,
+            "progressBar": false,
+            "positionClass": "toast-top-center",
+            "preventDuplicates": true,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "5000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        }
+    </script>
+</head>
+<body class="sidebar-mini ng-scope sidebar-collapse" id="DivAppConrtol" ng-app="myApp" ng-controller="myCntrl">
+    <form id="form1" runat="server" autocomplete="off">
+        <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true">
+        </asp:ScriptManager>
+        <div class="wrapper">
+            <!-- Navbar -->
+            <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+                <!-- Left navbar links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                    </li>
+                </ul>
+                <!-- Right navbar links -->
+                <ul class="navbar-nav ml-auto">
+                    <!-- Messages Dropdown Menu -->
+                    <li class="nav-item">
+                        <img src="../img/bfc_logo.PNG" style="height: 40px; width: 170px;" />
+                    </li>
+                </ul>
+            </nav>
+            <!-- /.navbar -->
+            <aside class="main-sidebar sidebar-dark-primary elevation-4">
+                <!-- Brand Logo -->
+                <!-- Sidebar -->
+                <div class="sidebar" style="height: 91vh;">
+                    <!-- Sidebar user (optional) -->
+                    <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                        <div class="image">
+                            <img src="img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                        </div>
+                        <div class="info">
+                            <a href="#" class="d-block">{{User_Name}}</a>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar Menu -->
+                    <nav class="mt-2">
+                        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                            <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+                            <li class="nav-item">
+                                <a href="dashboard.aspx" class="nav-link">
+                                    <i class="nav-icon far fa-circle text-red"></i>
+                                    <p class="text">Armaturenbrett</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="addnewposition.aspx" class="nav-link">
+                                    <i class="nav-icon far fa-circle text-green"></i>
+                                    <p class="text">Neue Position Erfassen</p>
+                                </a>
+                            </li>
+                            <li class="nav-item has-treeview">
+                                <a href="#" class="nav-link">
+                                    <i class="nav-icon fas fa-tachometer-alt"></i>
+                                    <p>
+                                        Prüfbericht
+               
+                                        <i class="right fas fa-angle-left"></i>
+                                    </p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="positiondata.aspx" class="nav-link">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Position Daten</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="closed_income.aspx" class="nav-link">
+                                    <i class="nav-icon far fa-circle text-fuchsia"></i>
+                                    <p class="text">Passwort ändern</p>
+                                </a>
+                            </li>
+                            <li id="Admin_Menu" style="display: none;" class="nav-item has-treeview">
+                                <a href="#" class="nav-link">
+                                    <i class="nav-icon fas fa-tachometer-alt"></i>
+                                    <p>
+                                        Admin-Bereich
+                                        <i class="right fas fa-angle-left"></i>
+                                    </p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="architekturmaster.aspx" class="nav-link">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Architektur Meister</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="derivatmaster.aspx" class="nav-link">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Derivat Meister</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="planergruppemaster.aspx" class="nav-link">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Planergruppe Meister</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="kostenartmaster.aspx" class="nav-link">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Kostenar Meister</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="hallemaster.aspx" class="nav-link">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Halle Meister</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="umrechnungmaster.aspx" class="nav-link">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Umrechnung Meister</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="beschlussstandmaster.aspx" class="nav-link">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Beschlussstand Meister</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="umsetzendesgewerkmaster.aspx" class="nav-link">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Umsetzendes Gewerk Meister</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="Themamaster.aspx" class="nav-link">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Thema Meister</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="Positionmaster.aspx" class="nav-link">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Position Meister</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="Usermaster.aspx" class="nav-link">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>User Meister</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" onclick="closewindow()" class="nav-link">
+                                    <i class="nav-icon far fa-circle text-danger"></i>
+                                    <p class="text">Austragen</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- /.sidebar-menu -->
+                </div>
+                <!-- /.sidebar -->
+            </aside>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <!-- Loader -->
+        <div class="container">
+            <div id="Loader" style="display: none; opacity: 0.7" class="loader-overlay">
+                <div class="loader-content">
+                    <div class="loader-index" style="opacity: 1">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Purchase Modal -->
+
+        <div class="modal fade" id="Purchase-modal" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content" style="background-color: #ff6666; color: #fff">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Product Given</h4>
+                        <button type="button" class="close" style="color: #fff;" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <form role="form">
+                            <div class="card-body" style="padding: 0px">
+                                <div class="form-group">
+                                    <select class="form-control" id="ddl_Product">
+                                        <option selected="selected" value="0">Select Product</option>
+                                        <option ng-repeat="t in DataForBind_Product" value="{{t.P_Id}}#{{t.Product_Name}}#{{t.Product_Price}}#{{t.Product_Point_Value}}#{{t.Product_Market_Price}}#{{t.Product_Distributor_Price}}">{{t.Display_Name}}</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input type="button" class="btn btn-outline-light" ng-click="fn_Add_Product_In_Cart();" style="background-color: #fff; border: 1px solid #007bff; color: #ff6666; border-radius: 4px; width: 100%" value="Add" />
+                                </div>
+                                <div class="form-group" id="div_data">
+                                    <table role="table" id="tbl_class1" class="table-bordered">
+                                        <thead role="rowgroup">
+                                            <tr role="row">
+                                                <th role="columnheader" style="width: 10%; text-align: left; vertical-align: middle;">S.No</th>
+                                                <th role="columnheader" style="width: 40%; text-align: left; vertical-align: middle;">Product Name</th>
+                                                <th role="columnheader" style="width: 20%; text-align: left; vertical-align: middle;">Product Price</th>
+                                                <th role="columnheader" style="width: 20%; text-align: left; vertical-align: middle;">Point Value</th>
+                                                <th role="columnheader" style="width: 10%; text-align: left; vertical-align: middle;">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody role="rowgroup">
+                                            <tr role="row" ng-repeat="t in DataForBind_Selected_Product">
+                                                <td role="cell" class="css_td1" style="text-align: left; vertical-align: middle;">{{$index + 1}}</td>
+                                                <td role="cell" class="css_td1" style="text-align: left; vertical-align: middle;">{{t.Product_Name}}</td>
+                                                <td role="cell" class="css_td1" style="text-align: left; vertical-align: middle;">{{t.Product_Price}}</td>
+                                                <td role="cell" class="css_td1" style="text-align: left; vertical-align: middle;">{{t.Product_Point_Value}}</td>
+                                                <td role="cell" class="css_td1" style="text-align: left; vertical-align: middle;">
+                                                    <input type="button" class="btn btn-block btn-primary" ng-click="fn_Remove_Added_Product(t.Id);" style="border-radius: 4px; width: 82px; background-color: #fff; color: #ff6666; border: 1px solid #007bff;" value="Delete" /></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="form-group" id="div_data_total">
+                                    <div class="row">
+                                        <div class="col-md-6" style="color: #fff; font-weight: bold; text-align: center;">Total Payable Amount - {{Total_Payble}}</div>
+                                        <div class="col-md-6" style="color: #fff; font-weight: bold; text-align: center;">Total PV - {{Total_PV}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <input type="button" class="btn btn-outline-light" data-dismiss="modal" style="background-color: #fff; border: 1px solid #007bff; color: #ff6666; border-radius: 4px" value="Close" />
+                        <input type="button" class="btn btn-outline-light" ng-click="fn_Save_Product();" style="background-color: #fff; border: 1px solid #007bff; color: #ff6666; border-radius: 4px" value="Save" />
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+
+        <aside class="control-sidebar control-sidebar-dark"></aside>
+        <!-- Bootstrap 4 -->
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <!-- jquery-validation -->
+        <script src="../js/jquery.validate.min.js"></script>
+        <script src="../js/additional-methods.min.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../js/adminlte.min.js"></script>
+        <!-- AdminLTE for demo purposes -->
+        <%--<script src="../js/demo.js"></script>--%>
+        <%--        <script src="../js/custom.js"></script>--%>
+        <script type="text/javascript" src="../AngularJs/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="../AngularJs/dataTables.bootstrap.min.js"></script>
+        <script src="../AngularJs/jszip.min.js"></script>
+        <script> 
+            if (sessionStorage.getItem("epl_isadmin") == "1") {
+                document.getElementById("Admin_Menu").style.display = "block";
+            }
+            else {
+                document.getElementById("Admin_Menu").style.display = "none";
+            }
+
+
+            function closewindow() {
+                sessionStorage.clear();
+                window.location.href = "Logout.html";
+            }
+            function onlyNumberKey(evt) {
+                var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+                if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+                    return false;
+                return true;
+            }
+        </script>
+        <script>
+            Chart.pluginService.register({
+                beforeDraw: function (chart) {
+                    if (chart.config.options.elements.center) {
+                        //Get ctx from string
+                        var ctx = chart.chart.ctx;
+                        //Get options from the center object in options
+                        var centerConfig = chart.config.options.elements.center;
+                        var fontStyle = centerConfig.fontStyle || 'Arial';
+                        var txt = centerConfig.text;
+                        var color = centerConfig.color || '#000';
+                        var sidePadding = centerConfig.sidePadding || 20;
+                        var sidePaddingCalculated = (sidePadding / 100) * (chart.innerRadius * 2)
+                        //Start with a base font of 30px
+                        ctx.font = "30px " + fontStyle;
+                        //Get the width of the string and also the width of the element minus 10 to give it 5px side padding
+                        var stringWidth = ctx.measureText(txt).width;
+                        var elementWidth = (chart.innerRadius * 2) - sidePaddingCalculated;
+                        // Find out how much the font can grow in width.
+                        var widthRatio = elementWidth / stringWidth;
+                        var newFontSize = Math.floor(30 * widthRatio);
+                        var elementHeight = (chart.innerRadius * 2);
+                        // Pick a new font size so it will not be larger than the height of label.
+                        var fontSizeToUse = Math.min(newFontSize, elementHeight);
+                        //Set font settings to draw it correctly.
+                        ctx.textAlign = 'center';
+                        ctx.textBaseline = 'middle';
+                        var centerX = ((chart.chartArea.left + chart.chartArea.right) / 2);
+                        var centerY = ((chart.chartArea.top + chart.chartArea.bottom) / 2);
+                        ctx.font = fontSizeToUse + "px " + fontStyle;
+                        ctx.fillStyle = color;
+                        //Draw text in center
+                        ctx.fillText(txt, centerX, centerY);
+                    }
+                }
+            });
+        </script>
+    <script>
+        Chart.defaults.doughnutLabels = Chart.helpers.clone(Chart.defaults.doughnut);
+
+        var helpers = Chart.helpers;
+        var defaults = Chart.defaults;
+
+        Chart.controllers.doughnutLabels = Chart.controllers.doughnut.extend({
+            updateElement: function (arc, index, reset) {
+                var _this = this;
+                var chart = _this.chart,
+                    chartArea = chart.chartArea,
+                    opts = chart.options,
+                    animationOpts = opts.animation,
+                    arcOpts = opts.elements.arc,
+                    centerX = (chartArea.left + chartArea.right) / 2,
+                    centerY = (chartArea.top + chartArea.bottom) / 2,
+                    startAngle = opts.rotation, // non reset case handled later
+                    endAngle = opts.rotation, // non reset case handled later
+                    dataset = _this.getDataset(),
+                    circumference = reset && animationOpts.animateRotate ? 0 : arc.hidden ? 0 : _this.calculateCircumference(dataset.data[index]) * (opts.circumference / (2.0 * Math.PI)),
+                    innerRadius = reset && animationOpts.animateScale ? 0 : _this.innerRadius,
+                    outerRadius = reset && animationOpts.animateScale ? 0 : _this.outerRadius,
+                    custom = arc.custom || {},
+                    valueAtIndexOrDefault = helpers.getValueAtIndexOrDefault;
+
+                helpers.extend(arc, {
+                    // Utility
+                    _datasetIndex: _this.index,
+                    _index: index,
+
+                    // Desired view properties
+                    _model: {
+                        x: centerX + chart.offsetX,
+                        y: centerY + chart.offsetY,
+                        startAngle: startAngle,
+                        endAngle: endAngle,
+                        circumference: circumference,
+                        outerRadius: outerRadius,
+                        innerRadius: innerRadius,
+                        label: valueAtIndexOrDefault(dataset.label, index, chart.data.labels[index])
+                    },
+
+                    draw: function () {
+                        var ctx = this._chart.ctx,
+                            vm = this._view,
+                            sA = vm.startAngle,
+                            eA = vm.endAngle,
+                            opts = this._chart.config.options;
+
+                        var labelPos = this.tooltipPosition();
+                        var segmentLabel = vm.circumference / opts.circumference * 100;
+
+                        ctx.beginPath();
+
+                        ctx.arc(vm.x, vm.y, vm.outerRadius, sA, eA);
+                        ctx.arc(vm.x, vm.y, vm.innerRadius, eA, sA, true);
+
+                        ctx.closePath();
+                        ctx.strokeStyle = vm.borderColor;
+                        ctx.lineWidth = vm.borderWidth;
+
+                        ctx.fillStyle = vm.backgroundColor;
+
+                        ctx.fill();
+                        ctx.lineJoin = 'bevel';
+
+                        if (vm.borderWidth) {
+                            ctx.stroke();
+                        }
+
+                        if (vm.circumference > 0.15) { // Trying to hide label when it doesn't fit in segment
+                            ctx.beginPath();
+                            ctx.font = helpers.fontString(opts.defaultFontSize, opts.defaultFontStyle, opts.defaultFontFamily);
+                            ctx.fillStyle = "#212529";
+                            ctx.textBaseline = "top";
+                            ctx.textAlign = "center";
+
+                            // Round percentage in a way that it always adds up to 100%
+                            ctx.fillText(segmentLabel.toFixed(0) + "%", labelPos.x, labelPos.y);
+                        }
+                    }
+                });
+
+                var model = arc._model;
+                model.backgroundColor = custom.backgroundColor ? custom.backgroundColor : valueAtIndexOrDefault(dataset.backgroundColor, index, arcOpts.backgroundColor);
+                model.hoverBackgroundColor = custom.hoverBackgroundColor ? custom.hoverBackgroundColor : valueAtIndexOrDefault(dataset.hoverBackgroundColor, index, arcOpts.hoverBackgroundColor);
+                model.borderWidth = custom.borderWidth ? custom.borderWidth : valueAtIndexOrDefault(dataset.borderWidth, index, arcOpts.borderWidth);
+                model.borderColor = custom.borderColor ? custom.borderColor : valueAtIndexOrDefault(dataset.borderColor, index, arcOpts.borderColor);
+
+                // Set correct angles if not resetting
+                if (!reset || !animationOpts.animateRotate) {
+                    if (index === 0) {
+                        model.startAngle = opts.rotation;
+                    } else {
+                        model.startAngle = _this.getMeta().data[index - 1]._model.endAngle;
+                    }
+
+                    model.endAngle = model.startAngle + model.circumference;
+                }
+
+                arc.pivot();
+            }
+        });
+    </script>
+    <script src="AngularJs/jquery.knob.js"></script>
+    <script>
+        $(function () {
+            /* jQueryKnob */
+
+            $(".knob").knob({
+                /*change : function (value) {
+                 //console.log("change : " + value);
+                 },
+                 release : function (value) {
+                 console.log("release : " + value);
+                 },
+                 cancel : function () {
+                 console.log("cancel : " + this.value);
+                 },*/
+                draw: function () {
+
+                    // "tron" case
+                    if (this.$.data('skin') == 'tron') {
+
+                        var a = this.angle(this.cv)  // Angle
+                            , sa = this.startAngle          // Previous start angle
+                            , sat = this.startAngle         // Start angle
+                            , ea                            // Previous end angle
+                            , eat = sat + a                 // End angle
+                            , r = true;
+
+                        this.g.lineWidth = this.lineWidth;
+
+                        this.o.cursor
+                            && (sat = eat - 0.3)
+                            && (eat = eat + 0.3);
+
+                        if (this.o.displayPrevious) {
+                            ea = this.startAngle + this.angle(this.value);
+                            this.o.cursor
+                                && (sa = ea - 0.3)
+                                && (ea = ea + 0.3);
+                            this.g.beginPath();
+                            this.g.strokeStyle = this.previousColor;
+                            this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, sa, ea, false);
+                            this.g.stroke();
+                        }
+
+                        this.g.beginPath();
+                        this.g.strokeStyle = r ? this.o.fgColor : this.fgColor;
+                        this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, sat, eat, false);
+                        this.g.stroke();
+
+                        this.g.lineWidth = 2;
+                        this.g.beginPath();
+                        this.g.strokeStyle = this.o.fgColor;
+                        this.g.arc(this.xy, this.xy, this.radius - this.lineWidth + 1 + this.lineWidth * 2 / 3, 0, 2 * Math.PI, false);
+                        this.g.stroke();
+
+                        return false;
+                    }
+                }
+            });
+            /* END JQUERY KNOB */
+        });
+    </script>
+        <script>
+            function excel_data(JsonData, File_Name, Json_Type, Json_Header) {
+                var jsonForChart = jQuery.extend(true, {}, JsonData);
+                $.each(JsonData, function (key, value) {
+                    $.each(value, function (k, v) {
+                        if (!isNaN(v) == true && v != "" && v != null) {
+                            jsonForChart[key][k] = parseFloat(v);
+                        }
+                        else {
+                            jsonForChart[key][k] = v;
+                        }
+                    });
+                });
+
+                var createXLSLFormatObj = [];
+                if (Json_Type != "F") {
+                    var header_data = "";
+                    header_data += '[';
+                    $.each(Json_Header, function (index, value) {
+                        header_data += '"' + value.key + '",';
+                    });
+                    header_data = header_data.slice(0, -1);
+                    header_data += "]";
+                    createXLSLFormatObj.push(JSON.parse(header_data));
+                }
+                else {
+                    createXLSLFormatObj.push(JSON.parse(Json_Header));
+                }
+                $.each(jsonForChart, function (index, value) {
+                    var innerRowData = [];
+                    $.each(value, function (ind, val) {
+                        if (val === null) {
+                            val = "";
+                        }
+                        if (val.toString().toLowerCase().includes("object:") == false) {
+                            innerRowData.push(val);
+                        }
+                    });
+                    createXLSLFormatObj.push(innerRowData);
+
+                });
+                /* File Name */
+                var filename = File_Name + ".xlsx";
+                /* Sheet Name */
+                var ws_name = File_Name.substring(0, 30);
+
+                if (typeof console !== 'undefined') console.log(new Date());
+                var wb = XLSX.utils.book_new(),
+                    ws = XLSX.utils.aoa_to_sheet(createXLSLFormatObj);
+                /* Add worksheet to workbook */
+                XLSX.utils.book_append_sheet(wb, ws, ws_name);
+                /* Write workbook and Download */
+                if (typeof console !== 'undefined') console.log(new Date());
+                XLSX.writeFile(wb, filename);
+                if (typeof console !== 'undefined') console.log(new Date());
+            };
+        </script>
+    </form>
+</body>
+</html>
